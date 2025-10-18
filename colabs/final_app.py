@@ -275,7 +275,7 @@ if uploaded_file is not None:
     st.write("✅ Combined shape before PCA:", test_final.shape)
 
     # ✅ Now verify expected dims BEFORE slicing
-    pca = joblib.load("/Users/sanglapacharyya/Downloads/PCA_ECG.pkl")
+    pca = joblib.load("/Users/joy/Downloads/ECG APP/model_pkl/PCA_ECG.pkl")
     expected_features = pca.n_features_in_
 
     if test_final.shape[1] != expected_features:
@@ -297,7 +297,7 @@ if uploaded_file is not None:
 
     from joblib import load
 
-    model = joblib.load("/Users/sanglapacharyya/Downloads/Heart_Disease_Prediction_using_ECG_new.pkl", mmap_mode='r')
+    model = joblib.load("/Users/joy/Downloads/ECG APP/model_pkl/Heart_Disease_Prediction_using_ECG_new.pkl", mmap_mode='r')
 
   
 
